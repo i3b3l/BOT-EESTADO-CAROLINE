@@ -1,0 +1,37 @@
+E-ESTADO - ROBO DE CONFERENCIA DE BENS
+Desenvolvido por Izabel Galvão :3
+
+ARQUIVOS PRINCIPAIS
+- Robo-E-Estado-Conferir.exe: executavel pronto para uso.
+- Iniciar_Robo_E-Estado.bat: mostra a explicacao da automacao e inicia o robo.
+- Abrir_Chrome_Depuracao.bat: abre o Chrome com a porta de depuracao 9222.
+- inventario.py: codigo-fonte Python original.
+- GERAR_EXE.bat: recompila o executavel, caso seja necessario.
+
+COMO USAR
+1. Execute Iniciar_Robo_E-Estado.bat.
+2. O Chrome de depuracao abrira automaticamente na pagina https://e-estado.ro.gov.br/.
+3. Faca login e deixe aberta a pagina/lista onde estao os bens a conferir.
+4. Volte ao terminal e pressione uma tecla para iniciar o robo.
+5. Confirme a janela inicial do robo.
+6. Para solicitar a interrupcao durante a automacao, pressione ESC.
+
+Se precisar abrir o Chrome de depuracao separadamente, use Abrir_Chrome_Depuracao.bat.
+
+O QUE O ROBO FAZ
+- Procura itens com status NAO CONFERIDO e NAO RECLASSIFICADO.
+- Abre Reclassificar e preenche Servivel, Localizado, Uso e usufruto do bem e Bom.
+- Salva a reclassificacao e, se nao houver aviso de bem bloqueado, clica em Conferir.
+- Se o sistema avisar que o bem esta bloqueado, tenta fechar o aviso e pula esse item.
+- Continua pelos itens e paginas disponiveis.
+
+REQUISITOS IMPORTANTES
+- O Chrome precisa estar aberto pelo arquivo Abrir_Chrome_Depuracao.bat, usando a porta 9222.
+- O usuario precisa estar autenticado no E-ESTADO e na pagina correta antes de iniciar.
+- O executavel inclui o runtime Python e as bibliotecas empacotadas; nao precisa instalar Python para executar.
+- O executavel nao inclui o Google Chrome nem credenciais do E-ESTADO.
+- Use apenas em ambiente autorizado e confira os resultados no sistema.
+
+OBSERVACAO
+O executavel foi gerado a partir de inventario.py. A compilacao e a verificacao de sintaxe foram concluidas.
+Antes de usar em producao, recomenda-se acompanhar a primeira execucao para confirmar que os seletores e as opcoes continuam correspondendo a tela atual do E-ESTADO.
