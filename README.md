@@ -31,6 +31,8 @@ Desenvolvido por **Izabel Galvão** · [GitHub @i3b3l](https://github.com/i3b3l)
 | `GERAR_EXE.bat` | Recompilação do executável. |
 | `requirements.txt` | Bibliotecas necessárias para executar o código-fonte. |
 
+Para instalar uma cópia nova baixada do GitHub, veja **[Instalação do GitHub](INSTALACAO-DO-GITHUB.md)**. O repositório já inclui o executável Windows e um exemplo vazio de histórico, sem IDs patrimoniais reais.
+
 ## Requisitos
 
 - Windows e Google Chrome instalados.
