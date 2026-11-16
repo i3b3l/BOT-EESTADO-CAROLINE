@@ -207,6 +207,12 @@ marimo/_lsp/
 __marimo__/
 
 # E-ESTADO local/session data
+# Histórico patrimonial local: não publicar IDs internos no GitHub.
+bens_bloqueados.json
+*.bak
+*BACKUP*/
+.bens_bloqueados_*.tmp
+_backup_antes_historico/
 ChromeDebugProfile/
 ChromeDebugProfile*/
 .env.*
